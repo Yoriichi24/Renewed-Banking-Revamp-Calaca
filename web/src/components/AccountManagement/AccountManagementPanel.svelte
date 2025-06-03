@@ -163,7 +163,7 @@
       onAccountChange();
     } catch {
       notify.set({
-        message: get(translations).error_renaming_account || "Error al renombrar la cuenta,
+        message: get(translations).error_renaming_account || "Error al renombrar la cuenta",
         type: "error"
       });
     }
