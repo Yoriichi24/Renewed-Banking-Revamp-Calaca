@@ -8,8 +8,8 @@
           <i class="fas fa-university text-fleeca-green text-2xl"></i>
         </div>
       </div>
-      <h3 class="text-xl font-semibold text-fleeca-text mb-2 font-display">Processing Transaction</h3>
-      <p class="text-fleeca-text-secondary text-center">Please wait while we process your request...</p>
+      <h3 class="text-xl font-semibold text-fleeca-text mb-2 font-display">Procesando Transaccion</h3>
+      <p class="text-fleeca-text-secondary text-center">Por favor espere mientras procesamos su solicitud...</p>
       <div class="w-full h-1 bg-fleeca-bg rounded-full mt-6 overflow-hidden">
         <div class="h-full bg-fleeca-green animate-pulse" style="width: 100%;"></div>
       </div>

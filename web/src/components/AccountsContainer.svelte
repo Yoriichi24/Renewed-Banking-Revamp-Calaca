@@ -69,7 +69,7 @@
       {#if $accounts && $accounts.length > 0 && $accounts[0]}
         <div class="bg-fleeca-bg p-4 rounded-lg mb-6 border border-fleeca-border shadow-sm">
           <h2 class="text-xl font-semibold text-fleeca-text mb-1">
-            Welcome, <span class="text-fleeca-green">{$accounts[0].name.split(' ')[0]}</span>
+            Bienvenido, <span class="text-fleeca-green">{$accounts[0].name.split(' ')[0]}</span>
             {#if $accounts[0].name.split(' ').length > 1}
               <span class="text-fleeca-green">{$accounts[0].name.split(' ')[1]}</span>
             {/if}
