@@ -56,7 +56,7 @@
     {#if Object.keys(members).length === 0}
       <div class="text-center py-4">
         <p class="text-fleeca-text-secondary">
-          {$translations.no_members || 'No members found'}
+          {$translations.no_members || 'No se han encontrado miembros'}
         </p>
       </div>
     {:else}

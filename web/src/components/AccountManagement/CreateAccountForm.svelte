@@ -30,7 +30,7 @@
           class="w-full rounded-lg border border-fleeca-border p-3 bg-fleeca-bg text-fleeca-text focus:border-fleeca-green transition-all"
         />
         <p class="text-fleeca-text-secondary text-sm mt-1">
-          {$translations.account_id_hint || 'Use lowercase letters, numbers, and underscores only'}
+          {$translations.account_id_hint || 'Utilice sólo letras minúsculas, números y guiones bajos'}
         </p>
       </div>
       

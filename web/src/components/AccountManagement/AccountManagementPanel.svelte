@@ -62,7 +62,7 @@
       accountMembers = {};
       activeView = 'viewMembers';
       notify.set({
-        message: get(translations).error_loading_members || "Error loading account members",
+        message: get(translations).error_loading_members || "Error al cargar los miembros de la cuenta",
         type: "error"
       });
     }
@@ -71,7 +71,7 @@
   async function createAccount(accountId) {
     if (!accountId) {
       notify.set({
-        message: get(translations).missing_params || "Please provide an account ID",
+        message: get(translations).missing_params || "Proporcione una ID de cuenta",
         type: "error"
       });
       return;
@@ -80,7 +80,7 @@
     try {
       await fetchNui('Renewed-Banking:client:createNewAccount', accountId);
       notify.set({
-        message: get(translations).account_created || "Account created successfully",
+        message: get(translations).account_created || "Cuenta creada con éxito",
         type: "success"
       });
       fetchPlayerAccounts();
@@ -88,7 +88,7 @@
       onAccountChange();
     } catch {
       notify.set({
-        message: get(translations).error_creating_account || "Error creating account",
+        message: get(translations).error_creating_account || "Error al crear cuenta",
         type: "error"
       });
     }
@@ -97,7 +97,7 @@
   async function addAccountMember(data) {
     if (!data.memberId) {
       notify.set({
-        message: get(translations).missing_params || "Please provide a member ID",
+        message: get(translations).missing_params || "Proporcione la ID de un miembro",
         type: "error"
       });
       return;
@@ -109,13 +109,13 @@
         memberId: data.memberId 
       });
       notify.set({
-        message: get(translations).member_added || "Member added successfully",
+        message: get(translations).member_added || "Miembro añadido con éxito",
         type: "success"
       });
       viewAccountMembers(selectedAccount);
     } catch {
       notify.set({
-        message: get(translations).error_adding_member || "Error adding member",
+        message: get(translations).error_adding_member || "Error al agregar un miembro",
         type: "error"
       });
     }
@@ -128,13 +128,13 @@
         cid: memberId 
       });
       notify.set({
-        message: get(translations).member_removed || "Member removed successfully",
+        message: get(translations).member_removed || "Miembro eliminado con éxito",
         type: "success"
       });
       viewAccountMembers(selectedAccount);
     } catch {
       notify.set({
-        message: get(translations).error_removing_member || "Error removing member",
+        message: get(translations).error_removing_member || "Error al eliminar un miembro",
         type: "error"
       });
     }
@@ -143,7 +143,7 @@
   async function changeAccountName(data) {
     if (!data.newName) {
       notify.set({
-        message: get(translations).missing_params || "Please provide a new account name",
+        message: get(translations).missing_params || "Indique un nuevo nombre de cuenta",
         type: "error"
       });
       return;
@@ -155,7 +155,7 @@
         newName: data.newName 
       });
       notify.set({
-        message: get(translations).account_renamed || "Account renamed successfully",
+        message: get(translations).account_renamed || "Cuenta renombrada correctamente",
         type: "success"
       });
       fetchPlayerAccounts();
@@ -163,7 +163,7 @@
       onAccountChange();
     } catch {
       notify.set({
-        message: get(translations).error_renaming_account || "Error renaming account",
+        message: get(translations).error_renaming_account || "Error al renombrar la cuenta,
         type: "error"
       });
     }
@@ -175,7 +175,7 @@
         account: selectedAccount 
       });
       notify.set({
-        message: get(translations).account_deleted || "Account deleted successfully",
+        message: get(translations).account_deleted || "Cuenta eliminada correctamente",
         type: "success"
       });
       fetchPlayerAccounts();

@@ -3,10 +3,10 @@
  import { translations } from '../../store/stores';
  
  const categories = [
-   { id: 'all', label: 'All Accounts', icon: 'fa-credit-card' },
+   { id: 'all', label: 'Todas las Cuentas', icon: 'fa-credit-card' },
    { id: 'personal', label: 'Personal', icon: 'fa-user' },
-   { id: 'business', label: 'Business', icon: 'fa-briefcase' },
-   { id: 'org', label: 'Organization', icon: 'fa-building' }
+   { id: 'business', label: 'Negocio', icon: 'fa-briefcase' },
+   { id: 'org', label: 'Organizacion', icon: 'fa-building' }
  ];
  
  export let selectedCategory = 'all';
