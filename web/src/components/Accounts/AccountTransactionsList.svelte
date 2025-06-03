@@ -106,7 +106,7 @@
             {#if !isAtm}
                 <button 
                     class="flex items-center justify-center py-3 px-2 bg-fleeca-green text-white rounded-lg font-medium hover:bg-fleeca-dark-green transition-all shadow-sm" 
-                    on:click={() => handleButton(account.id, "deposit")}
+                    on:click={() => handleButton(account.id, "Deposito")}
                 >
                     <i class="fas fa-arrow-down text-white mr-2"></i>
                     <span>{$translations.deposit_but || 'Deposit'}</span>
@@ -114,7 +114,7 @@
             {/if}
             <button 
                 class="flex items-center justify-center py-3 px-2 bg-fleeca-hover text-fleeca-text rounded-lg font-medium hover:bg-fleeca-bg transition-all border border-fleeca-border shadow-sm" 
-                on:click={() => handleButton(account.id, "withdraw")}
+                on:click={() => handleButton(account.id, "Retiro")}
             >
                 <i class="fas fa-arrow-up mr-2"></i>
                 <span>{$translations.withdraw_but || 'Withdraw'}</span>
@@ -122,7 +122,7 @@
             <button 
                 class="flex items-center justify-center py-3 px-2 bg-fleeca-hover text-fleeca-text rounded-lg font-medium hover:bg-fleeca-bg transition-all border border-fleeca-border shadow-sm" 
                 class:col-span-2={isAtm}
-                on:click={() => handleButton(account.id, "transfer")}
+                on:click={() => handleButton(account.id, "Transferencia")}
             >
                 <i class="fas fa-exchange-alt mr-2"></i>
                 <span>{$translations.transfer_but || 'Transfer'}</span>

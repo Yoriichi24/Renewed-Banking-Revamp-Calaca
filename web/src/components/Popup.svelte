@@ -113,7 +113,7 @@
             type="text" 
             name="comment" 
             id="comment" 
-            placeholder="Add a note about this transaction" 
+            placeholder="Añadir una nota sobre esta transacción" 
             class="w-full rounded-lg border border-fleeca-border p-3 bg-fleeca-card text-fleeca-text focus:border-fleeca-green transition-all"
           />
         </div>
@@ -129,7 +129,7 @@
               type="text" 
               name="stateId" 
               id="stateId" 
-              placeholder="Enter recipient ID" 
+              placeholder="Introduzca el ID del destinatario" 
               class="w-full rounded-lg border border-fleeca-border p-3 bg-fleeca-card text-fleeca-text focus:border-fleeca-green transition-all"
             />
           </div>

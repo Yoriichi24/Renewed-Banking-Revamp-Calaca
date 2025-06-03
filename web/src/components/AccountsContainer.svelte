@@ -50,7 +50,7 @@
               on:click={() => showAccountManagement = !showAccountManagement}
             >
               <i class="fas fa-users-cog text-fleeca-green mr-2"></i>
-              <span class="text-fleeca-text text-sm">Manage Accounts</span>
+              <span class="text-fleeca-text text-sm">Administrar Cuentas</span>
             </button>
           {/if}
 
